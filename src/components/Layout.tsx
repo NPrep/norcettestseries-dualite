@@ -1,0 +1,19 @@
+import { Outlet } from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
+import { ScrollRestoration } from 'react-router-dom';
+
+const Layout = () => {
+  return (
+    <div className="min-h-screen flex flex-col bg-white text-gray-900 font-sans">
+      <Header />
+      <main className="flex-grow">
+        <Outlet />
+      </main>
+      <Footer />
+      <ScrollRestoration />
+    </div>
+  );
+};
+
+export default Layout;
