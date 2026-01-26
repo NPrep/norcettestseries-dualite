@@ -1,3 +1,112 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* SEO Blog Engine Styles */
+  
+  .prose h2 {
+    @apply text-2xl md:text-3xl font-bold text-black mt-12 mb-6 border-b border-gray-200 pb-2 scroll-mt-24;
+  }
+  
+  .prose h3 {
+    @apply text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 scroll-mt-24;
+  }
+  
+  .prose p {
+    @apply text-gray-700 leading-relaxed mb-6 text-lg;
+  }
+
+  .prose ul {
+    @apply list-disc list-outside ml-6 mb-6 text-gray-700;
+  }
+
+  .prose ol {
+    @apply list-decimal list-outside ml-6 mb-6 text-gray-700;
+  }
+
+  .prose li {
+    @apply mb-2 pl-2;
+  }
+
+  /* Tables */
+  .blog-table-wrapper {
+    @apply overflow-x-auto my-8 rounded-lg border border-gray-200 shadow-sm;
+  }
+
+  .blog-table {
+    @apply min-w-full text-sm text-left;
+  }
+
+  .blog-table thead {
+    @apply bg-gray-100 text-gray-900 font-bold uppercase tracking-wider;
+  }
+
+  .blog-table th {
+    @apply px-6 py-4 border-b border-gray-200;
+  }
+
+  .blog-table td {
+    @apply px-6 py-4 border-b border-gray-100 text-gray-700;
+  }
+
+  .blog-table tr:hover {
+    @apply bg-gray-50;
+  }
+
+  /* Callout Boxes */
+  .callout-box {
+    @apply p-6 my-8 rounded-lg border-l-4;
+  }
+
+  .callout-summary {
+    @apply bg-blue-50 border-blue-600 text-blue-900;
+  }
+
+  .callout-mistake {
+    @apply bg-red-50 border-red-600 text-red-900;
+  }
+
+  .callout-title {
+    @apply font-bold text-lg mb-2 flex items-center;
+  }
+
+  /* Step by Step */
+  .step-card {
+    @apply flex gap-4 mb-6;
+  }
+
+  .step-number {
+    @apply flex-shrink-0 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-bold text-lg;
+  }
+
+  .step-content {
+    @apply pt-1;
+  }
+
+  /* FAQ Section */
+  .faq-item {
+    @apply border-b border-gray-200 py-4;
+  }
+
+  .faq-question {
+    @apply font-bold text-lg text-black cursor-pointer flex justify-between items-center;
+  }
+
+  .faq-answer {
+    @apply mt-2 text-gray-700 leading-relaxed;
+  }
+
+  /* Glossary */
+  .glossary-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4 my-8;
+  }
+
+  .glossary-item {
+    @apply bg-gray-50 p-4 rounded border border-gray-200;
+  }
+
+  .glossary-term {
+    @apply font-bold text-black block mb-1;
+  }
+}
