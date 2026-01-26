@@ -6,11 +6,11 @@
   /* SEO Blog Engine Styles */
   
   .prose h2 {
-    @apply text-2xl md:text-3xl font-bold text-black mt-12 mb-6 border-b border-gray-200 pb-2 scroll-mt-24;
+    @apply text-2xl md:text-3xl font-bold text-black mt-16 mb-6 border-b border-gray-200 pb-4 scroll-mt-32;
   }
   
   .prose h3 {
-    @apply text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-4 scroll-mt-24;
+    @apply text-xl md:text-2xl font-bold text-gray-800 mt-10 mb-4 scroll-mt-32;
   }
   
   .prose p {
@@ -18,20 +18,24 @@
   }
 
   .prose ul {
-    @apply list-disc list-outside ml-6 mb-6 text-gray-700;
+    @apply list-disc list-outside ml-6 mb-6 text-gray-700 text-lg;
   }
 
   .prose ol {
-    @apply list-decimal list-outside ml-6 mb-6 text-gray-700;
+    @apply list-decimal list-outside ml-6 mb-6 text-gray-700 text-lg;
   }
 
   .prose li {
-    @apply mb-2 pl-2;
+    @apply mb-3 pl-2;
+  }
+
+  .prose strong {
+    @apply font-bold text-gray-900;
   }
 
   /* Tables */
   .blog-table-wrapper {
-    @apply overflow-x-auto my-8 rounded-lg border border-gray-200 shadow-sm;
+    @apply overflow-x-auto my-10 rounded-lg border border-gray-200 shadow-sm;
   }
 
   .blog-table {
@@ -43,11 +47,15 @@
   }
 
   .blog-table th {
-    @apply px-6 py-4 border-b border-gray-200;
+    @apply px-6 py-4 border-b border-gray-300;
   }
 
   .blog-table td {
-    @apply px-6 py-4 border-b border-gray-100 text-gray-700;
+    @apply px-6 py-4 border-b border-gray-100 text-gray-700 align-top;
+  }
+
+  .blog-table tr:last-child td {
+    @apply border-b-0;
   }
 
   .blog-table tr:hover {
@@ -56,11 +64,11 @@
 
   /* Callout Boxes */
   .callout-box {
-    @apply p-6 my-8 rounded-lg border-l-4;
+    @apply p-8 my-10 rounded-lg border-l-8 shadow-sm;
   }
 
   .callout-summary {
-    @apply bg-blue-50 border-blue-600 text-blue-900;
+    @apply bg-blue-50 border-blue-700 text-blue-900;
   }
 
   .callout-mistake {
@@ -68,16 +76,16 @@
   }
 
   .callout-title {
-    @apply font-bold text-lg mb-2 flex items-center;
+    @apply font-bold text-xl mb-3 flex items-center uppercase tracking-wide;
   }
 
   /* Step by Step */
   .step-card {
-    @apply flex gap-4 mb-6;
+    @apply flex gap-6 mb-8 p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow;
   }
 
   .step-number {
-    @apply flex-shrink-0 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-bold text-lg;
+    @apply flex-shrink-0 w-12 h-12 rounded-full bg-black text-white flex items-center justify-center font-bold text-xl;
   }
 
   .step-content {
@@ -85,28 +93,36 @@
   }
 
   /* FAQ Section */
+  .faq-section {
+    @apply mt-12 bg-gray-50 p-8 rounded-xl border border-gray-200;
+  }
+
   .faq-item {
-    @apply border-b border-gray-200 py-4;
+    @apply border-b border-gray-200 py-5 last:border-0;
   }
 
   .faq-question {
-    @apply font-bold text-lg text-black cursor-pointer flex justify-between items-center;
+    @apply font-bold text-lg text-black cursor-pointer flex justify-between items-center hover:text-blue-700 transition-colors;
   }
 
   .faq-answer {
-    @apply mt-2 text-gray-700 leading-relaxed;
+    @apply mt-3 text-gray-700 leading-relaxed pl-4 border-l-2 border-gray-300;
   }
 
   /* Glossary */
   .glossary-grid {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-4 my-8;
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 my-10;
   }
 
   .glossary-item {
-    @apply bg-gray-50 p-4 rounded border border-gray-200;
+    @apply bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-black transition-colors;
   }
 
   .glossary-term {
-    @apply font-bold text-black block mb-1;
+    @apply font-bold text-black block mb-2 text-lg border-b border-gray-200 pb-2;
+  }
+  
+  .glossary-def {
+    @apply text-gray-700 text-sm leading-relaxed;
   }
 }
