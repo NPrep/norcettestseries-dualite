@@ -27,7 +27,10 @@ const Footer = () => {
             
             <div className="mt-6 pt-6 border-t border-gray-200">
               <div className="text-xs text-gray-500">
-                &copy; {new Date().getFullYear()} NPrep. All rights reserved.
+                &copy; {new Date().getFullYear()} NORCET Test Series. All rights reserved.
+              </div>
+              <div className="mt-2 text-xs font-bold text-gray-400 uppercase tracking-widest">
+                In association with NPrep
               </div>
             </div>
           </div>
