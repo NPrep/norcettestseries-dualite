@@ -1,7 +1,18 @@
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
-import { ChevronRight, FileText, BookOpen, Clock } from 'lucide-react';
-import NursingInfo from '../components/NursingInfo';
+import { 
+  ChevronRight, 
+  FileText, 
+  BookOpen, 
+  Clock, 
+  BarChart2, 
+  Monitor, 
+  Award, 
+  CheckCircle, 
+  Brain,
+  Zap,
+  Smartphone
+} from 'lucide-react';
 
 const Home = () => {
   return (
@@ -139,6 +150,139 @@ const Home = () => {
         </div>
       </section>
 
+      {/* NPrep Test Series Features */}
+      <section className="py-16 bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-black mb-4">The NPrep Advantage</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Powered by NPrep, our platform offers the most comprehensive testing ecosystem for nursing aspirants.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="bg-blue-100 p-4 rounded-full mb-4">
+                <BookOpen className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-2">30,000+ Questions</h3>
+              <p className="text-gray-600">Largest QBank covering every topic from FON to MSN with detailed rationales.</p>
+            </div>
+            
+            <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="bg-green-100 p-4 rounded-full mb-4">
+                <Monitor className="h-8 w-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-2">Real Exam Interface</h3>
+              <p className="text-gray-600">Practice on the exact TCS-iON interface used in AIIMS NORCET exams.</p>
+            </div>
+            
+            <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="bg-purple-100 p-4 rounded-full mb-4">
+                <BarChart2 className="h-8 w-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-2">AI Performance Analytics</h3>
+              <p className="text-gray-600">Granular analysis of your strong & weak areas, time management, and accuracy.</p>
+            </div>
+            
+            <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="bg-yellow-100 p-4 rounded-full mb-4">
+                <Award className="h-8 w-8 text-yellow-600" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-2">All India Ranking</h3>
+              <p className="text-gray-600">Compete with 50,000+ aspirants and know your standing before the real exam.</p>
+            </div>
+            
+            <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="bg-red-100 p-4 rounded-full mb-4">
+                <Brain className="h-8 w-8 text-red-600" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-2">Clinical Scenarios</h3>
+              <p className="text-gray-600">Special focus on new pattern clinical vignette questions asked in recent NORCETs.</p>
+            </div>
+            
+            <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="bg-indigo-100 p-4 rounded-full mb-4">
+                <CheckCircle className="h-8 w-8 text-indigo-600" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-2">Regular Practice</h3>
+              <p className="text-gray-600">Consistent targets and tests to keep your preparation disciplined and on track.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NASHTA Section */}
+      <section className="py-16 bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2">
+              <div className="inline-flex items-center bg-yellow-500 text-black font-bold px-3 py-1 rounded mb-4 uppercase tracking-wide text-sm">
+                <Zap className="h-4 w-4 mr-2" /> Exclusive Feature
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+                NASHTA Series
+              </h2>
+              <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+                NASHTA is a specialized, high-stakes mock test series designed by NPrep specifically for NORCET and nursing officer exam candidates. 
+              </p>
+              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                It simulates real exam conditions, providing AI-based performance analytics to help candidates assess their ranking, accuracy, and readiness for AIIMS-level questions.
+              </p>
+              
+              <div className="flex flex-wrap items-center gap-4">
+                <a 
+                  href="https://qtestseries.nprep.in" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-white text-black font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors"
+                >
+                  Start NASHTA Series
+                </a>
+                <div className="flex items-center text-gray-300 text-sm font-medium">
+                  <Smartphone className="h-5 w-5 mr-2 text-yellow-500" />
+                  Available on NPrep App
+                </div>
+              </div>
+            </div>
+            
+            <div className="lg:w-1/2">
+              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 shadow-2xl">
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div className="bg-gray-700 p-3 rounded-lg mr-4">
+                      <CheckCircle className="h-6 w-6 text-green-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-xl mb-1">Topic-wise Targets</h4>
+                      <p className="text-gray-400 text-sm">Fresh set of questions to keep you sharp and exam-ready.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="bg-gray-700 p-3 rounded-lg mr-4">
+                      <BarChart2 className="h-6 w-6 text-blue-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-xl mb-1">Live Analytics</h4>
+                      <p className="text-gray-400 text-sm">Instant results with subject-wise breakdown and negative marking analysis.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="bg-gray-700 p-3 rounded-lg mr-4">
+                      <Award className="h-6 w-6 text-yellow-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-xl mb-1">Leaderboard</h4>
+                      <p className="text-gray-400 text-sm">See where you stand among thousands of serious aspirants.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quick Exam Links Table */}
       <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-black mb-6">Quick Access: Nursing Officer Exams</h2>
@@ -183,9 +327,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Detailed Nursing Info Block (Homepage Only) */}
-      <NursingInfo />
     </>
   );
 };

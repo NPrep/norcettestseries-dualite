@@ -9,7 +9,8 @@ import {
   Award, 
   ArrowRight, 
   Zap,
-  Shield
+  Shield,
+  Smartphone
 } from 'lucide-react';
 
 // Enhanced Data Structure
@@ -186,21 +187,27 @@ const ExamTestSeries = ({ type }: Props) => {
                 <div className="flex items-center mb-4">
                   <Zap className="h-6 w-6 text-yellow-400 mr-2" />
                   <h2 className="text-2xl font-bold tracking-wide">NASHTA Series</h2>
-                  <span className="ml-3 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded uppercase">Daily Routine</span>
+                  <span className="ml-3 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded uppercase">Exclusive Series</span>
                 </div>
                 <p className="text-gray-300 mb-6 text-lg">
-                  <strong>Nursing All Subjects Daily Test Series (NASHTA)</strong> is your daily dose of practice. 
-                  Consistency is key. Attempt 50-100 fresh questions every morning to keep your concepts sharp.
+                  <strong>NASHTA</strong> is your consistent dose of practice. 
+                  Attempt fresh questions to keep your concepts sharp.
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                  <li className="flex items-center text-sm text-gray-300"><CheckCircle className="h-4 w-4 mr-2 text-green-400" /> Daily Topic-wise Targets</li>
+                  <li className="flex items-center text-sm text-gray-300"><CheckCircle className="h-4 w-4 mr-2 text-green-400" /> Topic-wise Targets</li>
                   <li className="flex items-center text-sm text-gray-300"><CheckCircle className="h-4 w-4 mr-2 text-green-400" /> Instant Rank Generation</li>
                   <li className="flex items-center text-sm text-gray-300"><CheckCircle className="h-4 w-4 mr-2 text-green-400" /> Detailed Explanations</li>
                   <li className="flex items-center text-sm text-gray-300"><CheckCircle className="h-4 w-4 mr-2 text-green-400" /> Mobile & Laptop Access</li>
                 </ul>
-                <a href="https://qtestseries.nprep.in" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-black font-bold py-3 px-6 rounded hover:bg-gray-100 transition-colors">
-                  Start Daily NASHTA
-                </a>
+                <div className="flex flex-wrap items-center gap-4">
+                  <a href="https://qtestseries.nprep.in" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-black font-bold py-3 px-6 rounded hover:bg-gray-100 transition-colors">
+                    Start NASHTA Series
+                  </a>
+                  <div className="flex items-center text-gray-300 text-sm font-medium">
+                    <Smartphone className="h-5 w-5 mr-2 text-yellow-500" />
+                    Available on NPrep App
+                  </div>
+                </div>
               </div>
               {/* Decorative circle */}
               <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-white opacity-5 rounded-full"></div>

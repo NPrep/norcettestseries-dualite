@@ -29,7 +29,7 @@ const Courses = () => {
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-blue-500 flex-shrink-0" /> 30,000+ Questions - QBank (Topic Wise)</li>
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-blue-500 flex-shrink-0" /> Each Question with Explanation</li>
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-blue-500 flex-shrink-0" /> Subject Wise Tests</li>
-                <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-blue-500 flex-shrink-0" /> Daily Test Series</li>
+                <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-blue-500 flex-shrink-0" /> Regular Test Series</li>
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-blue-500 flex-shrink-0" /> Previous Year Question Papers</li>
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-blue-500 flex-shrink-0" /> IBQs, Clinical Scenario Questions</li>
               </ul>
@@ -56,7 +56,7 @@ const Courses = () => {
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-red-500 flex-shrink-0" /> NORCET/ CHO/ BTSC/ KGMU/ GMCH - All Covered</li>
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-red-500 flex-shrink-0" /> Complete Nursing Syllabus in 100 Hours</li>
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-red-500 flex-shrink-0" /> Previous Year Papers - with Explanations</li>
-                <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-red-500 flex-shrink-0" /> Daily Test Series</li>
+                <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-red-500 flex-shrink-0" /> Regular Test Series</li>
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-red-500 flex-shrink-0" /> 30,000+ Questions - QBank (Topic Wise)</li>
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-red-500 flex-shrink-0" /> Subject Wise Tests</li>
               </ul>
@@ -84,7 +84,7 @@ const Courses = () => {
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-yellow-500 flex-shrink-0" /> 900 Hours - Basic to Advanced Theory (with Clinicals)</li>
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-yellow-500 flex-shrink-0" /> 100 Hrs - Rapid Revision 2.0</li>
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-yellow-500 flex-shrink-0" /> 30,000 Questions - QBank (Topic Wise)</li>
-                <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-yellow-500 flex-shrink-0" /> Daily Test Series</li>
+                <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-yellow-500 flex-shrink-0" /> Regular Test Series</li>
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-yellow-500 flex-shrink-0" /> Previous Year Papers</li>
                 <li className="flex items-start"><CheckCircle className="h-5 w-5 mr-3 text-yellow-500 flex-shrink-0" /> Subject Wise Papers</li>
               </ul>
