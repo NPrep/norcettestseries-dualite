@@ -283,6 +283,17 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="py-12 bg-white border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="nprep-testimonial-cta">
+            <h2 className="text-3xl font-semibold text-[var(--text-primary)]">Hear from real students</h2>
+            <a className="cta" href="https://nprep.in/blogs?filter=NORCET+Success+Story" target="_blank" rel="noopener noreferrer">
+              Read verified success stories on NPrep
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Quick Exam Links Table */}
       <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-black mb-6">Quick Access: Nursing Officer Exams</h2>

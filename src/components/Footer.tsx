@@ -5,7 +5,17 @@ const Footer = () => {
   return (
     <footer className="bg-gray-50 border-t border-gray-200 pt-12 pb-8 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="nprep-disclaimer-banner">
+          Disclaimer: This is an independent educational portal and not an official government website. In association with NPrep.
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h3 className="text-sm font-bold text-black uppercase tracking-wider mb-4">About</h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              NORCET Test Series helps nursing aspirants prepare with structured mock tests, topic practice, and exam-pattern analysis.
+            </p>
+          </div>
+
           <div>
             <h3 className="text-sm font-bold text-black uppercase tracking-wider mb-4">Resources</h3>
             <ul className="space-y-2">
@@ -17,11 +27,19 @@ const Footer = () => {
           </div>
 
           <div>
+            <h3 className="text-sm font-bold text-black uppercase tracking-wider mb-4">Courses</h3>
+            <ul className="space-y-2">
+              <li><a href="https://nprep.in/login" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-black hover:underline">NPrep login</a></li>
+              <li><a href="https://nprep.in/blogs?filter=NORCET+Success+Story" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-black hover:underline">Success stories</a></li>
+            </ul>
+          </div>
+
+          <div>
             <h3 className="text-sm font-bold text-black uppercase tracking-wider mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-center text-sm text-gray-600">
                 <Phone className="h-4 w-4 mr-2" />
-                <span>+91 6377 6391 69</span>
+                <a href="tel:+916377639169" className="hover:underline">+91 6377 6391 69</a>
               </li>
             </ul>
             
