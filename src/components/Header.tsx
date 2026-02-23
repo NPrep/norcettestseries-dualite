@@ -50,7 +50,7 @@ const Header = () => {
 
       {/* Mobile Nav */}
       {isMenuOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-gray-50">
+        <div className="md:hidden nprep-mobile-drawer">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <Link
