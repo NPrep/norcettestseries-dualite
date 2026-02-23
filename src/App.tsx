@@ -9,6 +9,7 @@ import PYQ from './pages/PYQ';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Courses from './pages/Courses';
+import ExamLinkPage from './pages/ExamLinkPage';
 import { RouterWrapper } from './next/RouterWrapper';
 
 type AppProps = {
@@ -41,6 +42,9 @@ function App({ initialPath = '/' }: AppProps) {
           {/* Fallback for other routes mentioned in footer/nav to avoid 404 in demo */}
           <Route path="nursing-officer-exams-in-india" element={<Home />} />
           <Route path="subject-tests/:subjectId" element={<SubjectTestSeries />} />
+          <Route path="state-north/:slug" element={<ExamLinkPage />} />
+          <Route path="state-south/:slug" element={<ExamLinkPage />} />
+          <Route path="specialized/:slug" element={<ExamLinkPage />} />
         </Route>
       </Routes>
     </RouterWrapper>
