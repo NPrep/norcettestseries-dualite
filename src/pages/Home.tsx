@@ -28,7 +28,7 @@ const featuredSeries = [
     title: 'NORCET Test Series',
     desc: 'AIIMS Nursing Officer Recruitment Common Eligibility Test mocks.',
     link: '/norcet-test-series',
-    questions: '2,500+ Questions',
+    questions: '30,000 Questions',
     accent: 'border-blue-500',
     badge: 'Popular'
   },
@@ -36,35 +36,35 @@ const featuredSeries = [
     title: 'RRB Staff Nurse',
     desc: 'Railway Recruitment Board specific technical and non-tech mocks.',
     link: '/rrb-staff-nurse-test-series',
-    questions: '2,500+ Questions',
+    questions: '30,000 Questions',
     accent: 'border-rose-500'
   },
   {
     title: 'ESIC Nursing Officer',
     desc: "Employees' State Insurance Corporation exam pattern tests.",
     link: '/esic-nursing-officer-test-series',
-    questions: '2,500+ Questions',
+    questions: '30,000 Questions',
     accent: 'border-emerald-500'
   },
   {
     title: 'Subject-Wise Tests',
     desc: 'Master specific subjects like Anatomy, MSN, and Pediatrics.',
     link: '/subject-wise-nursing-test-series',
-    questions: '2,500+ Questions',
+    questions: '30,000 Questions',
     accent: 'border-violet-500'
   },
   {
     title: 'State Staff Nurse',
     desc: 'Dedicated series for UP, Bihar, Rajasthan, and MP exams.',
     link: '/state-staff-nurse-test-series',
-    questions: '2,500+ Questions',
+    questions: '30,000 Questions',
     accent: 'border-amber-500'
   },
   {
     title: 'Previous Year Papers',
     desc: 'Practice with actual questions from past 10 years.',
     link: '/nursing-pyq-and-tests',
-    questions: '2,500+ Questions',
+    questions: '30,000 Questions',
     accent: 'border-cyan-500'
   }
 ];
