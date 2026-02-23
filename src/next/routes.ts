@@ -9,5 +9,17 @@ export const routes = [
   "/nursing-pyq-and-tests",
   "/rrb-staff-nurse-test-series",
   "/state-staff-nurse-test-series",
-  "/subject-wise-nursing-test-series"
+  "/subject-wise-nursing-test-series",
+  "/state-north/uppsc-staff-nurse",
+  "/state-north/rajasthan-cho",
+  "/state-north/mp-vyapam-nurse",
+  "/state-north/hssc-staff-nurse",
+  "/state-south/kerala-psc-nurse",
+  "/state-south/tn-mrb-nurse",
+  "/state-south/kpsc-staff-nurse",
+  "/state-south/ap-mhsrb",
+  "/specialized/mns-military-nursing",
+  "/specialized/jipmer-nursing",
+  "/specialized/pgimer-nursing",
+  "/specialized/cho-exams"
 ] as const;
