@@ -6,11 +6,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Courses', path: '/courses' },
-    { name: 'Mock Tests', path: '/nursing-mock-tests' },
-    { name: 'Subject Tests', path: '/subject-wise-nursing-test-series' },
-    { name: 'PYQs', path: '/nursing-pyq-and-tests' },
-    { name: 'Blog', path: '/blog' },
+    { name: 'NORCET Test Series', path: '/norcet-test-series' },
+    { name: 'Mock Test', path: '/norcet-mock-test' },
+    { name: 'Benefits', path: '/benefits-of-test-series' },
+    { name: 'Best Test Series', path: '/best-norcet-test-series' },
+    { name: 'FAQ', path: '/norcet-test-series-faq' }
   ];
 
   return (
@@ -22,8 +22,7 @@ const Header = () => {
               NORCET Test Series
             </Link>
           </div>
-          
-          {/* Desktop Nav */}
+
           <nav className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
               <Link
@@ -36,7 +35,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -48,7 +46,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Nav */}
       {isMenuOpen && (
         <div className="md:hidden nprep-mobile-drawer">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
