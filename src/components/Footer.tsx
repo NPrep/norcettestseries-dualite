@@ -12,25 +12,25 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-bold text-black uppercase tracking-wider mb-4">About</h3>
             <p className="text-sm text-gray-600 leading-relaxed">
-              NORCET Test Series is focused on online test series awareness, mock test practice, and performance improvement for NORCET aspirants.
+              NORCET Test Series helps nursing aspirants prepare with structured mock tests, topic practice, and exam-pattern analysis.
             </p>
           </div>
 
           <div>
-            <h3 className="text-sm font-bold text-black uppercase tracking-wider mb-4">Test Series Pages</h3>
+            <h3 className="text-sm font-bold text-black uppercase tracking-wider mb-4">Resources</h3>
             <ul className="space-y-2">
-              <li><Link to="/norcet-test-series" className="text-sm text-gray-600 hover:text-black hover:underline">NORCET Test Series</Link></li>
-              <li><Link to="/norcet-mock-test" className="text-sm text-gray-600 hover:text-black hover:underline">NORCET Mock Test</Link></li>
-              <li><Link to="/benefits-of-test-series" className="text-sm text-gray-600 hover:text-black hover:underline">Benefits of Test Series</Link></li>
-              <li><Link to="/norcet-test-series-faq" className="text-sm text-gray-600 hover:text-black hover:underline">FAQ</Link></li>
+              <li><Link to="/nursing-mock-tests" className="text-sm text-gray-600 hover:text-black hover:underline">Mock Tests</Link></li>
+              <li><Link to="/nursing-pyq-and-tests" className="text-sm text-gray-600 hover:text-black hover:underline">Previous Year Papers</Link></li>
+              <li><Link to="/blog" className="text-sm text-gray-600 hover:text-black hover:underline">Preparation Blog</Link></li>
+              <li><Link to="/nursing-officer-exams-in-india" className="text-sm text-gray-600 hover:text-black hover:underline">All Nursing Exams</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-sm font-bold text-black uppercase tracking-wider mb-4">NPrep</h3>
+            <h3 className="text-sm font-bold text-black uppercase tracking-wider mb-4">Courses</h3>
             <ul className="space-y-2">
-              <li><a href="https://nprep.in" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-black hover:underline">Start Test Series</a></li>
               <li><a href="https://nprep.in/login" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-black hover:underline">NPrep login</a></li>
+              <li><a href="https://nprep.in/blogs?filter=NORCET+Success+Story" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-black hover:underline">Success stories</a></li>
             </ul>
           </div>
 
@@ -42,7 +42,7 @@ const Footer = () => {
                 <a href="tel:+916377639169" className="hover:underline">+91 6377 6391 69</a>
               </li>
             </ul>
-
+            
             <div className="mt-6 pt-6 border-t border-gray-200">
               <div className="text-xs text-gray-500">
                 &copy; {new Date().getFullYear()} NORCET Test Series. All rights reserved.

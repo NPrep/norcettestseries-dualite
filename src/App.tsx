@@ -2,11 +2,14 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import NorcetTestSeries from './pages/NorcetTestSeries';
-import NorcetMockTest from './pages/NorcetMockTest';
-import BenefitsOfTestSeries from './pages/BenefitsOfTestSeries';
-import BestNorcetTestSeries from './pages/BestNorcetTestSeries';
-import NorcetTestSeriesFaq from './pages/NorcetTestSeriesFaq';
+import ExamTestSeries from './pages/ExamTestSeries';
+import SubjectTestSeries from './pages/SubjectTestSeries';
+import MockTests from './pages/MockTests';
+import PYQ from './pages/PYQ';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
+import Courses from './pages/Courses';
+import ExamLinkPage from './pages/ExamLinkPage';
 import { RouterWrapper } from './next/RouterWrapper';
 
 type AppProps = {
@@ -19,11 +22,29 @@ function App({ initialPath = '/' }: AppProps) {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="norcet-test-series" element={<NorcetTestSeries />} />
-          <Route path="norcet-mock-test" element={<NorcetMockTest />} />
-          <Route path="benefits-of-test-series" element={<BenefitsOfTestSeries />} />
-          <Route path="best-norcet-test-series" element={<BestNorcetTestSeries />} />
-          <Route path="norcet-test-series-faq" element={<NorcetTestSeriesFaq />} />
+          
+          {/* Exam Specific Routes */}
+          <Route path="norcet-test-series" element={<ExamTestSeries type="norcet" />} />
+          <Route path="rrb-staff-nurse-test-series" element={<ExamTestSeries type="rrb" />} />
+          <Route path="esic-nursing-officer-test-series" element={<ExamTestSeries type="esic" />} />
+          <Route path="state-staff-nurse-test-series" element={<ExamTestSeries type="state" />} />
+          
+          {/* Hubs */}
+          <Route path="courses" element={<Courses />} />
+          <Route path="subject-wise-nursing-test-series" element={<SubjectTestSeries />} />
+          <Route path="nursing-mock-tests" element={<MockTests />} />
+          <Route path="nursing-pyq-and-tests" element={<PYQ />} />
+          
+          {/* Blog Routes */}
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:slug" element={<BlogPost />} />
+          
+          {/* Fallback for other routes mentioned in footer/nav to avoid 404 in demo */}
+          <Route path="nursing-officer-exams-in-india" element={<Home />} />
+          <Route path="subject-tests/:subjectId" element={<SubjectTestSeries />} />
+          <Route path="state-north/:slug" element={<ExamLinkPage />} />
+          <Route path="state-south/:slug" element={<ExamLinkPage />} />
+          <Route path="specialized/:slug" element={<ExamLinkPage />} />
         </Route>
       </Routes>
     </RouterWrapper>
