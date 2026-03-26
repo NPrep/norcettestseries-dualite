@@ -37,9 +37,14 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-bold text-black uppercase tracking-wider mb-4">Contact Us</h3>
             <ul className="space-y-3">
-              <li className="flex items-center text-sm text-gray-600">
-                <Phone className="h-4 w-4 mr-2" />
-                <a href="tel:+916377639169" className="hover:underline">+91 6377 6391 69</a>
+              <li>
+                <a
+                  href="tel:+916377639169"
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 text-sm font-semibold text-black shadow-sm ring-1 ring-black/10 transition-colors hover:text-primary hover:ring-primary/40"
+                >
+                  <Phone className="h-4 w-4 text-primary" />
+                  <span>+91 6377 6391 69</span>
+                </a>
               </li>
             </ul>
             
